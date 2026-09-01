@@ -2,7 +2,7 @@
 
 Boundary polygons as GeoJSON. Charges 5 quota units per served polygon; region boundaries require a paid plan, country boundaries do not.
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to https://geosearch.dev, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |

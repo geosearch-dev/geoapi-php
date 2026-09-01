@@ -2,7 +2,7 @@
 
 Cross-type fuzzy text search
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to https://geosearch.dev, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
