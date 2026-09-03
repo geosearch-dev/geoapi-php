@@ -1,4 +1,4 @@
-# GeoAPI\HealthApi
+# GeoSearch\HealthApi
 
 API health and status
 
@@ -12,7 +12,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `getStatus()`
 
 ```php
-getStatus(): \GeoAPI\Model\GetStatus200Response
+getStatus(): \GeoSearch\Model\GetStatus200Response
 ```
 
 Health check
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeoAPI\Api\HealthApi(
+$apiInstance = new GeoSearch\Api\HealthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\GeoAPI\Model\GetStatus200Response**](../Model/GetStatus200Response.md)
+[**\GeoSearch\Model\GetStatus200Response**](../Model/GetStatus200Response.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# GeoAPI\BoundariesApi
+# GeoSearch\BoundariesApi
 
 Boundary polygons as GeoJSON. Charges 5 quota units per served polygon; region boundaries require a paid plan, country boundaries do not.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `getBoundary()`
 
 ```php
-getBoundary($geoname_id, $simplify, $lang): \GeoAPI\Model\BoundarySingleResponse
+getBoundary($geoname_id, $simplify, $lang): \GeoSearch\Model\BoundarySingleResponse
 ```
 
 Fetch an area's boundary polygon as GeoJSON
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\BoundariesApi(
+$apiInstance = new GeoSearch\Api\BoundariesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\BoundarySingleResponse**](../Model/BoundarySingleResponse.md)
+[**\GeoSearch\Model\BoundarySingleResponse**](../Model/BoundarySingleResponse.md)
 
 ### Authorization
 

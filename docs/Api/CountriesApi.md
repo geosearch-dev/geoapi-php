@@ -1,4 +1,4 @@
-# GeoAPI\CountriesApi
+# GeoSearch\CountriesApi
 
 Country data and regions within countries
 
@@ -15,7 +15,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `countryNeighbors()`
 
 ```php
-countryNeighbors($code, $lang, $fields): \GeoAPI\Model\CountryListResponse
+countryNeighbors($code, $lang, $fields): \GeoSearch\Model\CountryListResponse
 ```
 
 List neighboring countries
@@ -30,12 +30,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\CountriesApi(
+$apiInstance = new GeoSearch\Api\CountriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\CountryListResponse**](../Model/CountryListResponse.md)
+[**\GeoSearch\Model\CountryListResponse**](../Model/CountryListResponse.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ try {
 ## `getCountry()`
 
 ```php
-getCountry($code, $lang, $fields): \GeoAPI\Model\CountrySingleResponse
+getCountry($code, $lang, $fields): \GeoSearch\Model\CountrySingleResponse
 ```
 
 Get country by ISO code
@@ -96,12 +96,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\CountriesApi(
+$apiInstance = new GeoSearch\Api\CountriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\CountrySingleResponse**](../Model/CountrySingleResponse.md)
+[**\GeoSearch\Model\CountrySingleResponse**](../Model/CountrySingleResponse.md)
 
 ### Authorization
 
@@ -147,7 +147,7 @@ try {
 ## `listCountries()`
 
 ```php
-listCountries($lang, $continent, $iso_code, $population_min, $population_max, $cursor, $limit, $fields, $sort): \GeoAPI\Model\CountryListResponse
+listCountries($lang, $continent, $iso_code, $population_min, $population_max, $cursor, $limit, $fields, $sort): \GeoSearch\Model\CountryListResponse
 ```
 
 List countries
@@ -162,12 +162,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\CountriesApi(
+$apiInstance = new GeoSearch\Api\CountriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -207,7 +207,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\CountryListResponse**](../Model/CountryListResponse.md)
+[**\GeoSearch\Model\CountryListResponse**](../Model/CountryListResponse.md)
 
 ### Authorization
 
@@ -225,7 +225,7 @@ try {
 ## `listCountryRegions()`
 
 ```php
-listCountryRegions($code, $lang, $cursor, $limit, $fields, $sort): \GeoAPI\Model\RegionListResponse
+listCountryRegions($code, $lang, $cursor, $limit, $fields, $sort): \GeoSearch\Model\RegionListResponse
 ```
 
 List regions in a country
@@ -240,12 +240,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\CountriesApi(
+$apiInstance = new GeoSearch\Api\CountriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -279,7 +279,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\RegionListResponse**](../Model/RegionListResponse.md)
+[**\GeoSearch\Model\RegionListResponse**](../Model/RegionListResponse.md)
 
 ### Authorization
 

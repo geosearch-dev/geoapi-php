@@ -1,4 +1,4 @@
-# GeoAPI\IPGeolocationApi
+# GeoSearch\IPGeolocationApi
 
 
 
@@ -13,7 +13,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `lookupIP()`
 
 ```php
-lookupIP($address, $lang, $fields): \GeoAPI\Model\IPSingleResponse
+lookupIP($address, $lang, $fields): \GeoSearch\Model\IPSingleResponse
 ```
 
 IP geolocation lookup
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\IPGeolocationApi(
+$apiInstance = new GeoSearch\Api\IPGeolocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\IPSingleResponse**](../Model/IPSingleResponse.md)
+[**\GeoSearch\Model\IPSingleResponse**](../Model/IPSingleResponse.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ try {
 ## `lookupMyIP()`
 
 ```php
-lookupMyIP($lang, $fields): \GeoAPI\Model\IPSingleResponse
+lookupMyIP($lang, $fields): \GeoSearch\Model\IPSingleResponse
 ```
 
 Caller's IP geolocation
@@ -94,12 +94,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\IPGeolocationApi(
+$apiInstance = new GeoSearch\Api\IPGeolocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\IPSingleResponse**](../Model/IPSingleResponse.md)
+[**\GeoSearch\Model\IPSingleResponse**](../Model/IPSingleResponse.md)
 
 ### Authorization
 

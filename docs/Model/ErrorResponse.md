@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**error** | [**\GeoAPI\Model\ErrorResponseError**](ErrorResponseError.md) |  | [optional]
+**error** | [**\GeoSearch\Model\ErrorResponseError**](ErrorResponseError.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

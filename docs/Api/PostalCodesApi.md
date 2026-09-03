@@ -1,4 +1,4 @@
-# GeoAPI\PostalCodesApi
+# GeoSearch\PostalCodesApi
 
 
 
@@ -13,7 +13,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `listPostalCodes()`
 
 ```php
-listPostalCodes($lang, $country, $code, $within, $bbox, $cursor, $limit, $fields, $sort): \GeoAPI\Model\PostalCodeListResponse
+listPostalCodes($lang, $country, $code, $within, $bbox, $cursor, $limit, $fields, $sort): \GeoSearch\Model\PostalCodeListResponse
 ```
 
 List postal codes
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\PostalCodesApi(
+$apiInstance = new GeoSearch\Api\PostalCodesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\PostalCodeListResponse**](../Model/PostalCodeListResponse.md)
+[**\GeoSearch\Model\PostalCodeListResponse**](../Model/PostalCodeListResponse.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ try {
 ## `nearestPostalCode()`
 
 ```php
-nearestPostalCode($lat, $lon, $lang, $limit): \GeoAPI\Model\PostalCodeListResponse
+nearestPostalCode($lat, $lon, $lang, $limit): \GeoSearch\Model\PostalCodeListResponse
 ```
 
 Find nearest postal codes
@@ -106,12 +106,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\PostalCodesApi(
+$apiInstance = new GeoSearch\Api\PostalCodesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -141,7 +141,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\PostalCodeListResponse**](../Model/PostalCodeListResponse.md)
+[**\GeoSearch\Model\PostalCodeListResponse**](../Model/PostalCodeListResponse.md)
 
 ### Authorization
 

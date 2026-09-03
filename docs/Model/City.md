@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **timezone** | **string** |  | [optional]
 **latitude** | **float** |  | [optional]
 **longitude** | **float** |  | [optional]
-**country** | [**\GeoAPI\Model\CountryRef**](CountryRef.md) |  | [optional]
-**region** | [**\GeoAPI\Model\RegionRef**](RegionRef.md) |  | [optional]
+**country** | [**\GeoSearch\Model\CountryRef**](CountryRef.md) |  | [optional]
+**region** | [**\GeoSearch\Model\RegionRef**](RegionRef.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

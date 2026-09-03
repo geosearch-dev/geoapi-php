@@ -1,4 +1,4 @@
-# GeoAPI\SearchApi
+# GeoSearch\SearchApi
 
 Cross-type fuzzy text search
 
@@ -15,7 +15,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `autocomplete()`
 
 ```php
-autocomplete($q, $lang, $limit, $fields): \GeoAPI\Model\AutocompleteListResponse
+autocomplete($q, $lang, $limit, $fields): \GeoSearch\Model\AutocompleteListResponse
 ```
 
 Autocomplete search
@@ -30,12 +30,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\SearchApi(
+$apiInstance = new GeoSearch\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -65,7 +65,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\AutocompleteListResponse**](../Model/AutocompleteListResponse.md)
+[**\GeoSearch\Model\AutocompleteListResponse**](../Model/AutocompleteListResponse.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ try {
 ## `resolveCoordinate()`
 
 ```php
-resolveCoordinate($lat, $lon, $lang): \GeoAPI\Model\HierarchyListResponse
+resolveCoordinate($lat, $lon, $lang): \GeoSearch\Model\HierarchyListResponse
 ```
 
 Resolve coordinates to their containing administrative areas
@@ -98,12 +98,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\SearchApi(
+$apiInstance = new GeoSearch\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\HierarchyListResponse**](../Model/HierarchyListResponse.md)
+[**\GeoSearch\Model\HierarchyListResponse**](../Model/HierarchyListResponse.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ try {
 ## `reverseGeocode()`
 
 ```php
-reverseGeocode($lat, $lon, $fields): \GeoAPI\Model\ReverseGeocodeSingleResponse
+reverseGeocode($lat, $lon, $fields): \GeoSearch\Model\ReverseGeocodeSingleResponse
 ```
 
 Reverse geocode coordinates
@@ -164,12 +164,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\SearchApi(
+$apiInstance = new GeoSearch\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -197,7 +197,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\ReverseGeocodeSingleResponse**](../Model/ReverseGeocodeSingleResponse.md)
+[**\GeoSearch\Model\ReverseGeocodeSingleResponse**](../Model/ReverseGeocodeSingleResponse.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ try {
 ## `search()`
 
 ```php
-search($q, $lang, $type, $limit, $fields): \GeoAPI\Model\SearchListResponse
+search($q, $lang, $type, $limit, $fields): \GeoSearch\Model\SearchListResponse
 ```
 
 Cross-type search
@@ -230,12 +230,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\SearchApi(
+$apiInstance = new GeoSearch\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -267,7 +267,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\SearchListResponse**](../Model/SearchListResponse.md)
+[**\GeoSearch\Model\SearchListResponse**](../Model/SearchListResponse.md)
 
 ### Authorization
 

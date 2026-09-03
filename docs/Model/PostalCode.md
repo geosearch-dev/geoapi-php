@@ -17,6 +17,6 @@ Name | Type | Description | Notes
 **latitude** | **float** |  | [optional]
 **longitude** | **float** |  | [optional]
 **accuracy** | **int** |  | [optional]
-**country** | [**\GeoAPI\Model\CountryRef**](CountryRef.md) |  | [optional]
+**country** | [**\GeoSearch\Model\CountryRef**](CountryRef.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

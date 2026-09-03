@@ -1,4 +1,4 @@
-# GeoAPI\TimezonesApi
+# GeoSearch\TimezonesApi
 
 IANA timezone data
 
@@ -13,7 +13,7 @@ All URIs are relative to https://geosearch.dev, except if the operation defines 
 ## `getTimezone()`
 
 ```php
-getTimezone($tz_id, $lang, $fields): \GeoAPI\Model\TimezoneSingleResponse
+getTimezone($tz_id, $lang, $fields): \GeoSearch\Model\TimezoneSingleResponse
 ```
 
 Get timezone by IANA ID
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\TimezonesApi(
+$apiInstance = new GeoSearch\Api\TimezonesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\TimezoneSingleResponse**](../Model/TimezoneSingleResponse.md)
+[**\GeoSearch\Model\TimezoneSingleResponse**](../Model/TimezoneSingleResponse.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ try {
 ## `listTimezones()`
 
 ```php
-listTimezones($lang, $country, $cursor, $limit, $fields, $sort): \GeoAPI\Model\TimezoneListResponse
+listTimezones($lang, $country, $cursor, $limit, $fields, $sort): \GeoSearch\Model\TimezoneListResponse
 ```
 
 List timezones
@@ -94,12 +94,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: apiKeyAuth
-$config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeoAPI\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = GeoSearch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
 
-$apiInstance = new GeoAPI\Api\TimezonesApi(
+$apiInstance = new GeoSearch\Api\TimezonesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ try {
 
 ### Return type
 
-[**\GeoAPI\Model\TimezoneListResponse**](../Model/TimezoneListResponse.md)
+[**\GeoSearch\Model\TimezoneListResponse**](../Model/TimezoneListResponse.md)
 
 ### Authorization
 

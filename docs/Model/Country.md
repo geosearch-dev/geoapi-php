@@ -26,6 +26,6 @@ Name | Type | Description | Notes
 **latitude** | **float** |  | [optional]
 **longitude** | **float** |  | [optional]
 **flag_emoji** | **string** |  | [optional]
-**geometry** | [**\GeoAPI\Model\GeoJSONMultiPolygon**](GeoJSONMultiPolygon.md) | Country boundary. Returned by default on &#x60;GET /v1/countries/{code}&#x60; and on request via &#x60;?fields&#x3D;geometry&#x60; on &#x60;GET /v1/countries&#x60;.  NOT TIER-GATED. Country geometry is served on every plan, including Free. Region geometry is gated — see the &#x60;Region&#x60; schema. | [optional]
+**geometry** | [**\GeoSearch\Model\GeoJSONMultiPolygon**](GeoJSONMultiPolygon.md) | Country boundary. Returned by default on &#x60;GET /v1/countries/{code}&#x60; and on request via &#x60;?fields&#x3D;geometry&#x60; on &#x60;GET /v1/countries&#x60;.  NOT TIER-GATED. Country geometry is served on every plan, including Free. Region geometry is gated — see the &#x60;Region&#x60; schema. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
